@@ -17,6 +17,10 @@
 
 #include <cstdint>
 
+#ifdef ERROR
+#undef ERROR
+#endif
+
 namespace hardware_interface
 {
 enum class return_type : std::uint8_t
